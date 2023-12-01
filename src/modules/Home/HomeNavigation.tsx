@@ -8,9 +8,6 @@ export const HomeNavigation = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
             <NavLink to="/admin">admin</NavLink>
           </li>
           <li>
