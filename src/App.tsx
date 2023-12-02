@@ -1,4 +1,3 @@
-import "./App.css";
 
 import { RootRoutes } from "./router/Root.routes";
 import { ErrorBoundary } from "react-error-boundary";
