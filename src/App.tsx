@@ -1,7 +1,8 @@
-
 import { RootRoutes } from "./router/Root.routes";
 import { ErrorBoundary } from "react-error-boundary";
 import { ErrorBoundaryFallback } from "./compomemts/ErrorBoundaryFallback";
+
+import { AntThemeProvider } from "@shared/lib";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         console.log("hello");
       }}
     >
-      <RootRoutes />
+      <AntThemeProvider>
+        <RootRoutes />
+      </AntThemeProvider>
     </ErrorBoundary>
   );
 }

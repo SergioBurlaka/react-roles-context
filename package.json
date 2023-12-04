@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "antd": "^5.11.5",
+    "modern-normalize": "^2.0.0",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-error-boundary": "^4.0.11",
-    "react-router-dom": "^6.20.0"
+    "react-router-dom": "^6.20.0",
+    "the-new-css-reset": "^1.11.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

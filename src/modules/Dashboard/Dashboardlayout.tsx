@@ -22,7 +22,7 @@ const Dashboardlayout: FC<PropsWithChildren> = ({ children }) => {
       >
         <h1 className="">users roles</h1>
       </Layout.Header>
-      <Layout>
+      <Layout className="p-8">
         {children}
       </Layout>
     </Layout>

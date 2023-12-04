@@ -1,3 +1,10 @@
+@import 'modern-normalize';
+@import 'the-new-css-reset';
+
+@import '../node_modules/modern-normalize/modern-normalize.css';
+@import '../node_modules/the-new-css-reset/css/reset.css';
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 export const HomeNavigation = () => {
   return (
     <>
-      <h1>Home navigation</h1>
       <nav>
         <ul>
           <li>

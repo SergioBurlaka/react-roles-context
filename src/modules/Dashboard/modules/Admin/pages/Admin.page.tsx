@@ -1,11 +1,14 @@
- const AdminPage = () => {
+import { Card } from "antd";
+
+import CardTitle from "../../../../../general/CardTitle";
+
+const AdminPage = () => {
   setTimeout(() => {
     throw new Error("Parameter is not a number!");
   }, 2000);
 
   return (
-    <div>
-      <h1>Admin page</h1>
+    <Card title={<CardTitle>Admin page</CardTitle>}>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad
         quia laboriosam accusantium, ut tempora beatae. Natus quia quos illo
@@ -41,9 +44,8 @@
         Laboriosam ex, itaque in, temporibus aut corporis dolorem harum,
         provident iure incidunt quae asperiores veniam vel?
       </div>
-    </div>
+    </Card>
   );
 };
 
-
-export default AdminPage
+export default AdminPage;
