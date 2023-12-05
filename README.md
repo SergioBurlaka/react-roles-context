@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + Ant Design + React hook form + tailwind + React Query
+# React + TypeScript + Vite + Ant Design + React hook form + tailwind + React Query + Zod
 
 Goals: 
 
@@ -8,3 +8,4 @@ Goals:
 - modals on context
 - viretual table
 - infinite scroll in select
+- forms on Zod 
