@@ -5,6 +5,11 @@ export const AntThemeProvider: FC<PropsWithChildren<unknown>> = ({
   children,
 }) => {
   const antTheme: ThemeConfig = {
+    token: {
+      colorPrimary: "#0066A6",
+      colorBgBase: "#fff",
+      colorText: "#535353",
+    },
     components: {
       Typography: {
         titleMarginBottom: 0,

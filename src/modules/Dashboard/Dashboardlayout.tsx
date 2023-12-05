@@ -1,8 +1,10 @@
 import React, { FC, type PropsWithChildren } from "react";
 
-import { Layout, theme } from "antd";
+import { Layout, theme, Typography } from "antd";
 
 const { useToken } = theme;
+
+import TopNavigation from "./components/TopNavigation";
 
 enum LayoutConstants {
   HEADER_HEIGHT = 64,
@@ -14,15 +16,20 @@ const Dashboardlayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <Layout className="relative h-full min-h-screen ">
       <Layout.Header
-        className="sticky top-0 z-30 w-full px-2 shadow-md md:px-4"
+        className="sticky top-0 z-30 w-full px-2 shadow-md md:px-4 flex items-center"
         style={{
           height: LayoutConstants.HEADER_HEIGHT,
           backgroundColor: antTheme.token.colorBgContainer,
         }}
       >
-        <h1 className="">users roles</h1>
+        <Typography.Title className="uppercase">
+          <h1>users roles</h1>
+        </Typography.Title>
       </Layout.Header>
       <Layout className="p-8">
+        <div>
+          <TopNavigation />
+        </div>
         {children}
       </Layout>
     </Layout>
