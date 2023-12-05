@@ -4,4 +4,7 @@ Goals:
 
 - Make aplication to handle difwrwnt rolwes for users
 - CRUD  for user using React Query
-
+- roles on context
+- modals on context
+- viretual table
+- infinite scroll in select
