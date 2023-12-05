@@ -8,7 +8,7 @@ export const AntThemeProvider: FC<PropsWithChildren<unknown>> = ({
     token: {
       colorPrimary: "#0066A6",
       colorBgBase: "#fff",
-      colorText: "#535353",
+      colorText: "#665780",
     },
     components: {
       Typography: {
