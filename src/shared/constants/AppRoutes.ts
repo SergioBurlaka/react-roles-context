@@ -8,6 +8,10 @@ export const AppRoutes = {
     label: "Manager page"
 
   },
+  superUser: {
+    path: "super-user",
+    label: "Super user page"
+  },
   user: {
     path: "user",
     label: "User page"

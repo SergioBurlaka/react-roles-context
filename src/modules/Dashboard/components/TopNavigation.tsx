@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import {
-  AppstoreOutlined,
-  MailOutlined,
-  SettingOutlined,
+  SolutionOutlined,
+  SettingOutlined ,
+  UserOutlined,
+  TeamOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
@@ -14,17 +15,22 @@ const items: MenuProps["items"] = [
   {
     label: AppRoutes.admin.label,
     key: AppRoutes.admin.path,
-    icon: <MailOutlined />,
+    icon: <SettingOutlined  />,
   },
   {
     label: AppRoutes.manager.label,
     key: AppRoutes.manager.path,
-    icon: <AppstoreOutlined />,
+    icon: <SolutionOutlined />,
+  },
+  {
+    label: AppRoutes.superUser.label,
+    key: AppRoutes.superUser.path,
+    icon: <TeamOutlined />,
   },
   {
     label: AppRoutes.user.label,
     key: AppRoutes.user.path,
-    icon: <SettingOutlined />,
+    icon: <UserOutlined />,
   },
 ];
 
@@ -39,6 +45,7 @@ const TopNavigation: React.FC = () => {
 
   return (
     <Menu
+      style={{ height: 46 }}
       onClick={onClick}
       selectedKeys={[current]}
       mode="horizontal"

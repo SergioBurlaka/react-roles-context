@@ -26,8 +26,8 @@ const Dashboardlayout: FC<PropsWithChildren> = ({ children }) => {
           <h1>users roles</h1>
         </Typography.Title>
       </Layout.Header>
-      <Layout className="p-4 pt-20">
-        <div className="fixed top-0 z-30 mb-4 mt-20">
+      <Layout className="relative w-auto p-4">
+        <div className="sticky top-20 z-30 mb-4 w-full">
           <TopNavigation />
         </div>
         {children}
