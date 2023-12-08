@@ -5,7 +5,7 @@ import CardTitle from "../../../../../general/CardTitle";
 
 const ManagerPage = () => {
   return (
-    <Card title={<CardTitle>Manager page</CardTitle>}>
+    <Card title={<CardTitle>Manager</CardTitle>}>
       <div>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ducimus
         nam impedit magni mollitia doloribus fugit aspernatur dolorem recusandae

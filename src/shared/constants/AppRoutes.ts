@@ -1,19 +1,19 @@
 export const AppRoutes = {
   admin: {
     path: "admin",
-    label: "Admin page"
+    label: "Admin"
   },
   manager: {
     path: "manager",
-    label: "Manager page"
+    label: "Manager"
 
   },
   superUser: {
     path: "super-user",
-    label: "Super user page"
+    label: "Super user"
   },
   user: {
     path: "user",
-    label: "User page"
+    label: "User"
   },
 };

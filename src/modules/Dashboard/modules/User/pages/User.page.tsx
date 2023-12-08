@@ -5,7 +5,7 @@ import CardTitle from "../../../../../general/CardTitle";
 
 const UserPage = () => {
   return (
-    <Card title={<CardTitle>User page</CardTitle>}>
+    <Card title={<CardTitle>User</CardTitle>}>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
         aliquid repudiandae corrupti eum debitis dignissimos odit minus deserunt

@@ -8,7 +8,7 @@ const AdminPage = () => {
   }, 2000);
 
   return (
-    <Card title={<CardTitle>Admin page</CardTitle>}>
+    <Card title={<CardTitle>Admin</CardTitle>}>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad
         quia laboriosam accusantium, ut tempora beatae. Natus quia quos illo
