@@ -1,8 +1,9 @@
-import { RootRoutes } from "./router/Root.routes";
+import { RootRoutes } from "../router/Root.routes";
 import { ErrorBoundary } from "react-error-boundary";
-import { ErrorBoundaryFallback } from "./compomemts/ErrorBoundaryFallback";
+import { ErrorBoundaryFallback } from "../compomemts/ErrorBoundaryFallback";
 
 import { AntThemeProvider } from "@shared/lib";
+import { InterceptorsProvider } from "./providers/InterceptorsProvider";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       }}
     >
       <AntThemeProvider>
-        <RootRoutes />
+        <InterceptorsProvider>
+          <RootRoutes />
+        </InterceptorsProvider>
       </AntThemeProvider>
     </ErrorBoundary>
   );
