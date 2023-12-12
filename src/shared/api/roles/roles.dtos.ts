@@ -4,14 +4,11 @@ export enum DefaultUserRoles {
 }
 
 export enum UserRoles {
-  ROLE_CLIENT_SUPERVISOR = 'ROLE_CLIENT_SUPERVISOR',
-  ROLE_CLIENT_MANAGER = 'ROLE_CLIENT_MANAGER',
-  ROLE_SEO_MANAGER = 'ROLE_SEO_MANAGER',
   ROLE_ADMIN = 'ROLE_ADMIN',
-  ROLE_SUPER_ADMIN = 'ROLE_SUPER_ADMIN',
+  ROLE_MANAGER = 'ROLE_MANAGER',
+  ROLE_SUPER_USER = 'ROLE_SUPER_USER',
 }
 
 export type AllUserRolesType = DefaultUserRoles | UserRoles;
 
-export const clientUserRoles = [UserRoles.ROLE_CLIENT_MANAGER, UserRoles.ROLE_CLIENT_SUPERVISOR];
-
+export const userRoles = [DefaultUserRoles.ROLE_USER, UserRoles.ROLE_SUPER_USER];
