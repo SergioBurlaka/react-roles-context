@@ -22,7 +22,7 @@ function App() {
             >
               <RootRoutes />
             </ErrorBoundary>
-            <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
+            <ReactQueryDevtools initialIsOpen={false} />
           </QueryClientProvider>
         </InterceptorsProvider>
       </AntThemeProvider>

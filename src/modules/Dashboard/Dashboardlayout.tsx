@@ -22,9 +22,7 @@ const Dashboardlayout: FC<PropsWithChildren> = ({ children }) => {
           backgroundColor: antTheme.token.colorBgContainer,
         }}
       >
-        <Typography.Title className="uppercase">
-          <h1>users roles</h1>
-        </Typography.Title>
+        <Typography.Title className="uppercase">users roles</Typography.Title>
       </Layout.Header>
       <Layout className="relative w-auto p-4">
         <div className="sticky top-20 z-30 mb-4 w-full">

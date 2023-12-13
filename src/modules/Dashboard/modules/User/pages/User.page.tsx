@@ -2,10 +2,37 @@ import React from "react";
 
 import { Card } from "antd";
 import CardTitle from "../../../../../general/CardTitle";
+import { useNavigate } from "react-router-dom";
+
+import { AppRoutes } from "@shared/constants";
+
 
 const UserPage = () => {
+  const navigate = useNavigate();
+
+  // const { isAllowed: isAdminAllowed } = useRoleGuard({
+  //   role: UserRoles.ROLE_ADMIN,
+  // });
+
   return (
-    <Card title={<CardTitle>User</CardTitle>}>
+    <Card
+      title={
+        <CardTitle
+          onAddClick={
+            // isAdminAllowed
+            //   ? () => {
+            //       navigate(AppRoutes.DASHBOARD.USERS.CREATE.buildPath({}));
+            //     }
+            //   : undefined
+            () => {
+              navigate(AppRoutes.user.children.create.path);
+            }
+          }
+        >
+          User
+        </CardTitle>
+      }
+    >
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
         aliquid repudiandae corrupti eum debitis dignissimos odit minus deserunt
