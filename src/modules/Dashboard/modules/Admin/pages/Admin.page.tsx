@@ -3,9 +3,6 @@ import { Card } from "antd";
 import CardTitle from "../../../../../general/CardTitle";
 
 const AdminPage = () => {
-  setTimeout(() => {
-    throw new Error("Parameter is not a number!");
-  }, 2000);
 
   return (
     <Card title={<CardTitle>Admin</CardTitle>}>
